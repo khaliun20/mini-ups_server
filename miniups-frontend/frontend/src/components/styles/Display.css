@@ -1,0 +1,40 @@
+h1{
+    font-family: Karla;
+    font-size: 30px;
+}
+
+h2{
+    font-family: Karla;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+}
+
+nav li:hover {
+    background-color: #eee;
+}
+
+.clickable li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.clickable li.active {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: passw0rd
+      POSTGRES_DB: ups
+    restart: always
+
+  mini-ups:
+    build: mini-ups/
+    ports:
+      - "9708:9708"
+    depends_on:
+      - db
