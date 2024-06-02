@@ -4,11 +4,11 @@ This is a full-stack online order delivery system modeling UPS completed with 2 
 
 ## Backend
 
-Tech Used: Python, SQLAlchemy, PostgreSQL, Docker 
+Tech Used: Python, PostgreSQL, Docker 
 
 ### Networking
 
-* Accepts connection requests from Amazon partner.
+* Accepts connection requests from Amazon partners.
 * Accepts connection requests from clients who made orders on Amazon.
 * Connects with the UPS truck inventory server.
 
@@ -20,7 +20,7 @@ Tech Used: Python, SQLAlchemy, PostgreSQL, Docker
 
 * We used PostgreSQL to store:
     1. delivery information
-    2. communication ACKs
+    2. message sequence numbers and ACKs to realize At Most Once and At Least Once communication/processing of messages. 
 
 ### General Business Logic 
 
