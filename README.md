@@ -20,7 +20,7 @@ Tech Used: Python, PostgreSQL, Docker
 
 * We used PostgreSQL to store:
     1. delivery information
-    2. message sequence numbers and ACKs to realize At Most Once and At Least Once communication/processing of messages. 
+    2. message sequence numbers and ACKs to realize Exactly-Once Semantics (At least once + Idempotence)
 
 ### General Business Logic 
 
